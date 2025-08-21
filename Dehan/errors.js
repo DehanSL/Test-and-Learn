@@ -3,8 +3,8 @@
 
 
 // use of try catch error
+let a = 1;
 try {
-    let a = 1;
 
 a.toUpperCase();
 } catch (error) {
@@ -21,3 +21,17 @@ a.toUpperCase();
 }
 
 
+
+// create a custom error
+
+ customError = () => { 
+    throw new Error ("error")
+ }
+
+try {
+  
+    customError()
+ } catch (error) {
+    
+    console.log(error)
+ }
