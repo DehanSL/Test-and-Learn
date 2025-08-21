@@ -5,6 +5,11 @@ let a = {
 }
 console.log(a)
 
-let {fname,height} = a
+// let {fname,height} = a
 
-console.log(fname)
+// console.log(fname)
+
+
+let {height,...rest} = a
+
+console.log(rest)
